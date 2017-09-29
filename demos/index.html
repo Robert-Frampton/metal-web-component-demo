@@ -7,11 +7,35 @@
 
 	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.13/webcomponents-lite.js"></script>
+
 	<script src="../build/globals/web-component.js"></script>
 </head>
 <body>
 	<h1>Web Component</h1>
 
-	<web-component message="Hello, World!" />
+	<h2>No shadow root</h2>
+
+	<web-component id="component1" message="Hello, World!"></web-component>
+
+	<script>
+		var component1 = document.getElementById('component1');
+
+		setTimeout(function() {
+			component1.setAttribute('message', 'Updated with HTMLElement.setAttribute()');
+		}, 1000);
+	</script>
+
+	<h2>With shadow root</h2>
+
+	<web-component id="component2" message="Hello, World!" useshadowdom="true"></web-component>
+
+	<script>
+		var component2 = document.getElementById('component2');
+
+		setTimeout(function() {
+			component2.setAttribute('message', 'Updated with HTMLElement.setAttribute()');
+		}, 2000);
+	</script>
 </body>
 </html>

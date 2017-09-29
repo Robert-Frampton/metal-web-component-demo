@@ -4,5 +4,7 @@
  * This renders the component's whole content.
  */
 {template .render}
-	<div class="web-component">Hello World</div>
+	{@param message: string}
+
+	<div class="web-component">{$message}</div>
 {/template}

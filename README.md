@@ -1,6 +1,6 @@
-# metal-web-component
+# metal-web-component-demo
 
-My awesome Metal.js project
+A sample use case for defining Metal component as Web Components.
 
 ## Setup
 

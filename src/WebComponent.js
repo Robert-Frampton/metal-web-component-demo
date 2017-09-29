@@ -11,6 +11,12 @@ class WebComponent extends Component {
 }
 Soy.register(WebComponent, templates);
 
+WebComponent.STATE = {
+	message: {
+		value: ''
+	}
+};
+
 defineWebComponent('web-component', WebComponent);
 
 export { WebComponent };
