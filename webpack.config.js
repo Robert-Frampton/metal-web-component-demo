@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-	entry: './src/WebComponent.js',
+	entry: './src/main.js',
 	module: {
 		rules: [{
 			test: /\.js$/,

@@ -37,5 +37,17 @@
 			component2.setAttribute('message', 'Updated with HTMLElement.setAttribute()');
 		}, 2000);
 	</script>
+
+	<h2>JSON Attributes</h2>
+
+	<my-list id="list" items='["foo", "bar", "baz"]'></my-list>
+
+	<script>
+		var list = document.getElementById('list');
+
+		setTimeout(function() {
+			list.setAttribute('items', '["foo", "bar", "baz", "baz", "bar", "foo"]');
+		}, 3000);
+	</script>
 </body>
 </html>

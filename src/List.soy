@@ -1,0 +1,14 @@
+{namespace List}
+
+/**
+ * This renders the component's whole content.
+ */
+{template .render}
+	{@param items: list<?>}
+
+	<ol class="list">
+		{foreach $item in $items}
+			<li>{$item}</li>
+		{/foreach}
+	</ol>
+{/template}
